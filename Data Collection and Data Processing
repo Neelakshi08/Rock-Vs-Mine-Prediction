@@ -6,3 +6,8 @@ sonar_data.shape
 sonar_data.describe()
 sonar_data[60].value_counts()
 sonar_data.groupby(60).mean()
+#separating data and labels
+X= sonar_data.drop(columns=60,axis=1)
+Y=sonar_data[60]
+print(X)
+print(Y)
