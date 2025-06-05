@@ -1,0 +1,3 @@
+#loading dataset to a panda dataframe
+sonar_data=pd.read_csv('/content/Copy of sonar data.csv', header=None)
+sonar_data.head()
