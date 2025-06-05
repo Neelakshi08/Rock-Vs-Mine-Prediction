@@ -1,3 +1,8 @@
 #loading dataset to a panda dataframe
 sonar_data=pd.read_csv('/content/Copy of sonar data.csv', header=None)
 sonar_data.head()
+#no. of rows and colmn
+sonar_data.shape
+sonar_data.describe()
+sonar_data[60].value_counts()
+sonar_data.groupby(60).mean()
